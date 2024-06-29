@@ -41,6 +41,8 @@ jobs:
       run: npm audit fix
     - name: Run Integration Tests
       run: npm run test:unit
+    - name: Display Username
+      run: bach "Gabcho333"
 
   ui_tests:
     needs: integration_tests
