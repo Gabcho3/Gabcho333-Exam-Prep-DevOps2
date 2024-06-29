@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build & Test
 
 on:
   push:
@@ -22,6 +22,8 @@ jobs:
       run: npm install
     - name: Fix audit
       run: npm audit fix
+    - name: Display Username
+      run: bash "Gabcho333
 
   integration_tests:
     needs: build
@@ -41,8 +43,6 @@ jobs:
       run: npm audit fix
     - name: Run Integration Tests
       run: npm run test:unit
-    - name: Display Username
-      run: bach "Gabcho333"
 
   ui_tests:
     needs: integration_tests
