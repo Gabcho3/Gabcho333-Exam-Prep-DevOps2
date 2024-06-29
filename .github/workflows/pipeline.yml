@@ -23,7 +23,7 @@ jobs:
     - name: Fix audit
       run: npm audit fix
     - name: Display Username
-      run: echo "Gabcho333
+      run: echo "Gabcho333"
 
   integration_tests:
     needs: build
